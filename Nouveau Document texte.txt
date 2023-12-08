@@ -1,7 +1,5 @@
-rederction
-
-
-
-http://localhost/Mix_manga/pricerange.php?min=100&max=300
-http://localhost/Mix_manga/pricerange.php?min=100?&max=300
-
+If faut faire une base donne mone « mix_manga »  lancer ces commande 
+1/ CREATE TABLE manga (id INT(11) AUTO_INCREMENT PRIMARY KEY,img VARCHAR(1000)  NOT NULL,nom VARCHAR(255)  NOT NULL,type VARCHAR(255)  NOT NULL,description VARCHAR(255)  NOT NULL,     categories VARCHAR(255)  NOT NULL, prix INT(11) NOT NULL, quality INT(11) NOT NULL, prom INT(11), auteur VARCHAR(255)  NOT NULL,date DATE NOT NULL );
+2/ CREATE TABLE orders ( id INT(11) AUTO_INCREMENT PRIMARY KEY, login VARCHAR(255)  NOT NULL, ids VARCHAR(255) NOT NULL, qty VARCHAR(255) NOT NULL,date DATE NOT NULL,     etap VARCHAR(255) , cause VARCHAR(255)  NULL ); 
+3/  CREATE TABLE rate (  id INT(11) AUTO_INCREMENT PRIMARY KEY,  login VARCHAR(255)  NOT NULL, id_product INT(11) NOT NULL,  note INT(11) NOT NULL ); 
+4/ CREATE TABLE users (  userid INT(11) AUTO_INCREMENT PRIMARY KEY,  login VARCHAR(255)  NOT NULL, email VARCHAR(255)  NOT NULL,  phone INT(11) NOT NULL,adresse VARCHAR(255)  NOT NULL, password VARCHAR(255)  NOT NULL, niv INT(11) NOT NULL );
