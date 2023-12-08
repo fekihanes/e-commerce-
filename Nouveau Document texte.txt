@@ -1,0 +1,7 @@
+rederction
+
+
+
+http://localhost/Mix_manga/pricerange.php?min=100&max=300
+http://localhost/Mix_manga/pricerange.php?min=100?&max=300
+
